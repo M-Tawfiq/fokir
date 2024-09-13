@@ -1,0 +1,356 @@
+/* Normalization */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+/* Home-Section */
+.home{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(../Images/slider-01.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.home-content{
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+    bottom: 120px;
+    
+}
+.home-content span{
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.home-content h1{
+    color: #FF305B;
+    font-size: 90px;
+    font-weight: 700;
+    
+    margin-block: 0;
+}
+
+.home-content p{
+    color: white;
+    font-size: 38px;
+    font-weight: 200;
+    margin-block: 0;
+}
+/* Navigation-Bar */
+.nav-bar{
+    font-family: "Roboto", sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 300px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+
+}
+
+.nav-logo span{
+    color:  #FF305B;
+    font-size: 30px ;
+}
+
+.nav-links ul{
+    display: flex;
+    column-gap: 15px;
+    
+}
+
+.nav-bar a{
+
+    color: white;
+
+}
+
+.home-id a {
+    color: #FF305B;
+}
+/* About-section */
+.about{
+    /* background-color: aqua; */
+    width: 70%;
+    height: 750px;
+    margin-inline: auto;
+    padding-block: 50px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* position: relative; */
+}
+
+.about-photo{
+    /* background-color: blue; */
+    width: 35%;
+    
+    position: relative;
+    
+}
+
+.about-photo img{
+    width: 100%;
+    
+    position: relative;
+    /* top: 0px;
+    left: 0px; */
+    
+}
+.about .about-photo::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border: 9px gray solid;
+    border-radius: 10px;
+    height: 75%;
+    top: -24px;
+    left: -29px;
+
+
+}
+
+.about-content{
+    /* background-color: blueviolet; */
+    width: 65%;
+    /* position: absolute; */
+    padding-left: 100px;
+
+}
+
+.about-content h2{
+    width: 25%;
+    position: relative;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.about-content h2::before{
+    position: absolute;
+    top: -25%;
+    left: -10px;
+    content: "";
+    width: 4px;
+    height: 150%;
+    background-color: #FF305B;
+}
+.about-content p{
+    font-size: 16px;
+    color: #555555;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.about-content hr{
+    border: none;
+    border-top: 2px dashed  gray;
+    
+}
+.about-info{
+    /* background-color: chartreuse; */
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    justify-content: space-between;
+}
+
+.about-info .item{
+    /* background-color: lightblue; */
+    width: 200px;
+    
+}
+.about-content button{
+    margin-block: 25px;
+    padding: 10px 25px;
+    background-color: #FF305B;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.services{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding-block: 50px;
+}
+
+.services h2{
+    /* background-color: aqua; */
+    font-size: 40px;
+    font-family: "Source Sans 3", sans-serif;
+    margin-top: 0;
+    width: 15%;
+    margin-inline: auto;
+    position: relative;
+}
+
+.services h2::before{
+    content: "";
+    width: 60%;
+    height: 10px;
+    border-top: 1px #FF305B solid;
+    border-bottom: 1px #FF305B solid;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    margin-left: -30%;
+
+}
+
+.services h2::after{
+    content: "";
+    width: 85%;
+    height: 10px;
+    border-top: 1px #FF305B solid;
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    margin-left: -42.5%;
+}
+
+.v-line{
+    width: 1px;
+    height: 20px;
+    background-color: #000000;
+    margin-inline: auto;
+    position: relative;
+    top: -16px;
+
+    /* margin-block: 25px; */
+}
+
+.services-items{
+    width: 70%;
+    margin-inline: auto;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.services-item{
+    /* background-color: aquamarine; */
+    flex-basis: 400px;
+    padding: 30px 20px;
+    
+}
+
+.services-item h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 25px;
+    margin-top:30px ;
+    
+}
+i{
+    color: #FF305B;
+    font-size: 25px;
+}
+
+/* OurPortfolio */
+.portf{
+    padding-block:50px ;
+}
+
+
+.portf h2{
+    /* background-color: aqua; */
+    font-size: 40px;
+    font-family: "Source Sans 3", sans-serif;
+    width: 15%;
+    margin-inline: auto;
+    position: relative;
+    margin-bottom: 60px;
+    font-family: "Source Sans 3", sans-serif;
+    margin-top: 0;
+}
+
+.portf h2::before{
+    content: "";
+    width: 60%;
+    height: 10px;
+    border-top: 1px #FF305B solid;
+    border-bottom: 1px #FF305B solid;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    margin-left: -30%;
+
+}
+
+    .portf h2::after{
+        content: "";
+        width: 85%;
+        height: 10px;
+        border-top: 1px #FF305B solid;
+        position: absolute;
+        top: 135%;
+    left: 50%;
+    margin-left: -42.5%;
+}
+
+.portf-links{
+    font-family: "Source Sans 3", sans-serif;
+    text-align: center;
+    margin-block: 20px;
+}
+
+.portf-links ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    
+}
+
+.portf-links a{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+.home-id a{
+    color: #FF305B;
+    
+}
+
+.portf-items {  
+    /* background-color: aqua; */
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portf-items .item{
+    width: 33.33%;
+    padding: 10px 15px;
+}
+
+.portf-items img{
+    display: block;
+    width: 100%;
+}
